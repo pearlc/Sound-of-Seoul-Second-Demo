@@ -30,6 +30,8 @@
 		9B2C23B21A1736FD00E36D98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23B11A1736FD00E36D98 /* QuartzCore.framework */; };
 		9B2C23B41A17370300E36D98 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23B31A17370300E36D98 /* SystemConfiguration.framework */; };
 		F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD11A18729000D477A1 /* SWRevealViewController.m */; };
+		F7F90CD81A18742A00D477A1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD71A18742A00D477A1 /* MapViewController.m */; };
+		F7F90CDB1A18743E00D477A1 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CDA1A18743E00D477A1 /* MenuTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		9B2C23B31A17370300E36D98 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F7F90CD01A18729000D477A1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F7F90CD11A18729000D477A1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F7F90CD61A18742A00D477A1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		F7F90CD71A18742A00D477A1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		F7F90CD91A18743E00D477A1 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		F7F90CDA1A18743E00D477A1 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,10 @@
 				9B2C23811A17353900E36D98 /* LaunchScreen.xib */,
 				9B2C23761A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld */,
 				9B2C236F1A17353900E36D98 /* Supporting Files */,
+				F7F90CD61A18742A00D477A1 /* MapViewController.h */,
+				F7F90CD71A18742A00D477A1 /* MapViewController.m */,
+				F7F90CD91A18743E00D477A1 /* MenuTableViewController.h */,
+				F7F90CDA1A18743E00D477A1 /* MenuTableViewController.m */,
 			);
 			path = "Sound of Seoul Second Demo";
 			sourceTree = "<group>";
@@ -304,6 +314,8 @@
 				F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */,
 				9B2C237B1A17353900E36D98 /* ViewController.m in Sources */,
 				9B2C23781A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld in Sources */,
+				F7F90CDB1A18743E00D477A1 /* MenuTableViewController.m in Sources */,
+				F7F90CD81A18742A00D477A1 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
