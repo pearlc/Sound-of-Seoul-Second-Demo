@@ -29,6 +29,7 @@
 		9B2C23B01A1736F700E36D98 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23AF1A1736F700E36D98 /* OpenGLES.framework */; };
 		9B2C23B21A1736FD00E36D98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23B11A1736FD00E36D98 /* QuartzCore.framework */; };
 		9B2C23B41A17370300E36D98 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23B31A17370300E36D98 /* SystemConfiguration.framework */; };
+		F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD11A18729000D477A1 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		9B2C23AF1A1736F700E36D98 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9B2C23B11A1736FD00E36D98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9B2C23B31A17370300E36D98 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F7F90CD01A18729000D477A1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F7F90CD11A18729000D477A1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		9B2C23631A17353900E36D98 = {
 			isa = PBXGroup;
 			children = (
+				F7F90CCF1A18727F00D477A1 /* SWRevealViewController */,
 				9B2C239B1A17365000E36D98 /* GoogleMaps.bundle */,
 				9B2C23981A17358800E36D98 /* frameworks */,
 				9B2C236E1A17353900E36D98 /* Sound of Seoul Second Demo */,
@@ -183,6 +187,15 @@
 				9B2C23991A17362E00E36D98 /* GoogleMaps.framework */,
 			);
 			name = frameworks;
+			sourceTree = "<group>";
+		};
+		F7F90CCF1A18727F00D477A1 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F7F90CD01A18729000D477A1 /* SWRevealViewController.h */,
+				F7F90CD11A18729000D477A1 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 			files = (
 				9B2C23751A17353900E36D98 /* AppDelegate.m in Sources */,
 				9B2C23721A17353900E36D98 /* main.m in Sources */,
+				F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */,
 				9B2C237B1A17353900E36D98 /* ViewController.m in Sources */,
 				9B2C23781A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld in Sources */,
 			);
@@ -492,6 +506,7 @@
 				9B2C23941A17353900E36D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B2C23951A17353900E36D98 /* Build configuration list for PBXNativeTarget "Sound of Seoul Second DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +515,7 @@
 				9B2C23971A17353900E36D98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
