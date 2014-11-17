@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cKL-2a-UEO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kfB-Gf-ym9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -29,7 +29,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cj5-SY-rCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="-405"/>
+            <point key="canvasLocation" x="253" y="-353"/>
         </scene>
         <!--Map-->
         <scene sceneID="6SI-qo-ytQ">
@@ -44,11 +44,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="r0q-ro-LQT"/>
+                    <navigationItem key="navigationItem" title="Map" id="r0q-ro-LQT">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="L32-hQ-jG9"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jg2-WN-AnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="329"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="bQg-vT-dPf">
+            <objects>
+                <viewController id="kfB-Gf-ym9" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="cKL-2a-UEO" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="sYh-eB-Rpd"/>
+                        <segue destination="lfi-yT-GSE" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="9nm-AV-DoO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6m-Ao-0mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-601" y="329"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Q8-5f-XCJ">
