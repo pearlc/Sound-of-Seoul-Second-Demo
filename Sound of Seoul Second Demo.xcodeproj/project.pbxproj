@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B288F031A1BAC0300ACF352 /* SWRevealFrontUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B288F021A1BAC0300ACF352 /* SWRevealFrontUIViewController.m */; };
+		9B288F061A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B288F051A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m */; };
 		9B2C23721A17353900E36D98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C23711A17353900E36D98 /* main.m */; };
 		9B2C23751A17353900E36D98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C23741A17353900E36D98 /* AppDelegate.m */; };
 		9B2C23781A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C23761A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld */; };
-		9B2C237B1A17353900E36D98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C237A1A17353900E36D98 /* ViewController.m */; };
 		9B2C237E1A17353900E36D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2C237C1A17353900E36D98 /* Main.storyboard */; };
 		9B2C23801A17353900E36D98 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B2C237F1A17353900E36D98 /* Images.xcassets */; };
 		9B2C23831A17353900E36D98 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2C23811A17353900E36D98 /* LaunchScreen.xib */; };
@@ -29,6 +30,10 @@
 		9B2C23B01A1736F700E36D98 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23AF1A1736F700E36D98 /* OpenGLES.framework */; };
 		9B2C23B21A1736FD00E36D98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23B11A1736FD00E36D98 /* QuartzCore.framework */; };
 		9B2C23B41A17370300E36D98 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C23B31A17370300E36D98 /* SystemConfiguration.framework */; };
+		9B57890F1A20834800E7137A /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B57890E1A20834800E7137A /* FavoriteViewController.m */; };
+		9BAED72A1A1DD276000AA094 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAED7291A1DD276000AA094 /* AboutViewController.m */; };
+		9BCC2C8E1A21CEEA000B2AFF /* SoundMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC2C8D1A21CEEA000B2AFF /* SoundMetaData.m */; };
+		9BCC2C911A21D1C6000B2AFF /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC2C901A21D1C6000B2AFF /* Place.m */; };
 		F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD11A18729000D477A1 /* SWRevealViewController.m */; };
 		F7F90CD81A18742A00D477A1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD71A18742A00D477A1 /* MapViewController.m */; };
 		F7F90CDB1A18743E00D477A1 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CDA1A18743E00D477A1 /* MenuTableViewController.m */; };
@@ -45,14 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B288F011A1BAC0300ACF352 /* SWRevealFrontUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealFrontUIViewController.h; sourceTree = "<group>"; };
+		9B288F021A1BAC0300ACF352 /* SWRevealFrontUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealFrontUIViewController.m; sourceTree = "<group>"; };
+		9B288F041A1BACBA00ACF352 /* SWRevealFrontUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealFrontUITableViewController.h; sourceTree = "<group>"; };
+		9B288F051A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealFrontUITableViewController.m; sourceTree = "<group>"; };
 		9B2C236C1A17353900E36D98 /* Sound of Seoul Second Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound of Seoul Second Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2C23701A17353900E36D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B2C23711A17353900E36D98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B2C23731A17353900E36D98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B2C23741A17353900E36D98 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B2C23771A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sound_of_Seoul_Second_Demo.xcdatamodel; sourceTree = "<group>"; };
-		9B2C23791A17353900E36D98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9B2C237A1A17353900E36D98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9B2C237D1A17353900E36D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B2C237F1A17353900E36D98 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B2C23821A17353900E36D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -73,6 +80,14 @@
 		9B2C23AF1A1736F700E36D98 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9B2C23B11A1736FD00E36D98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9B2C23B31A17370300E36D98 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9B57890D1A20834800E7137A /* FavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		9B57890E1A20834800E7137A /* FavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
+		9BAED7281A1DD276000AA094 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9BAED7291A1DD276000AA094 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		9BCC2C8C1A21CEEA000B2AFF /* SoundMetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundMetaData.h; sourceTree = "<group>"; };
+		9BCC2C8D1A21CEEA000B2AFF /* SoundMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundMetaData.m; sourceTree = "<group>"; };
+		9BCC2C8F1A21D1C6000B2AFF /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		9BCC2C901A21D1C6000B2AFF /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
 		F7F90CD01A18729000D477A1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F7F90CD11A18729000D477A1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F7F90CD61A18742A00D477A1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -112,9 +127,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B288F001A1BAB9C00ACF352 /* SWRevealViewControllerWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				9B288F011A1BAC0300ACF352 /* SWRevealFrontUIViewController.h */,
+				9B288F021A1BAC0300ACF352 /* SWRevealFrontUIViewController.m */,
+				9B288F041A1BACBA00ACF352 /* SWRevealFrontUITableViewController.h */,
+				9B288F051A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m */,
+			);
+			name = SWRevealViewControllerWrappers;
+			sourceTree = "<group>";
+		};
 		9B2C23631A17353900E36D98 = {
 			isa = PBXGroup;
 			children = (
+				9B288F001A1BAB9C00ACF352 /* SWRevealViewControllerWrappers */,
 				F7F90CCF1A18727F00D477A1 /* SWRevealViewController */,
 				9B2C239B1A17365000E36D98 /* GoogleMaps.bundle */,
 				9B2C23981A17358800E36D98 /* frameworks */,
@@ -138,8 +165,6 @@
 			children = (
 				9B2C23731A17353900E36D98 /* AppDelegate.h */,
 				9B2C23741A17353900E36D98 /* AppDelegate.m */,
-				9B2C23791A17353900E36D98 /* ViewController.h */,
-				9B2C237A1A17353900E36D98 /* ViewController.m */,
 				9B2C237C1A17353900E36D98 /* Main.storyboard */,
 				9B2C237F1A17353900E36D98 /* Images.xcassets */,
 				9B2C23811A17353900E36D98 /* LaunchScreen.xib */,
@@ -149,6 +174,14 @@
 				F7F90CD71A18742A00D477A1 /* MapViewController.m */,
 				F7F90CD91A18743E00D477A1 /* MenuTableViewController.h */,
 				F7F90CDA1A18743E00D477A1 /* MenuTableViewController.m */,
+				9BAED7281A1DD276000AA094 /* AboutViewController.h */,
+				9BAED7291A1DD276000AA094 /* AboutViewController.m */,
+				9B57890D1A20834800E7137A /* FavoriteViewController.h */,
+				9B57890E1A20834800E7137A /* FavoriteViewController.m */,
+				9BCC2C8C1A21CEEA000B2AFF /* SoundMetaData.h */,
+				9BCC2C8D1A21CEEA000B2AFF /* SoundMetaData.m */,
+				9BCC2C8F1A21D1C6000B2AFF /* Place.h */,
+				9BCC2C901A21D1C6000B2AFF /* Place.m */,
 			);
 			path = "Sound of Seoul Second Demo";
 			sourceTree = "<group>";
@@ -309,13 +342,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B57890F1A20834800E7137A /* FavoriteViewController.m in Sources */,
 				9B2C23751A17353900E36D98 /* AppDelegate.m in Sources */,
+				9B288F031A1BAC0300ACF352 /* SWRevealFrontUIViewController.m in Sources */,
 				9B2C23721A17353900E36D98 /* main.m in Sources */,
 				F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */,
-				9B2C237B1A17353900E36D98 /* ViewController.m in Sources */,
 				9B2C23781A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld in Sources */,
+				9BAED72A1A1DD276000AA094 /* AboutViewController.m in Sources */,
+				9BCC2C8E1A21CEEA000B2AFF /* SoundMetaData.m in Sources */,
 				F7F90CDB1A18743E00D477A1 /* MenuTableViewController.m in Sources */,
 				F7F90CD81A18742A00D477A1 /* MapViewController.m in Sources */,
+				9B288F061A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m in Sources */,
+				9BCC2C911A21D1C6000B2AFF /* Place.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWRevealFrontUIViewController.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : SWRevealFrontUIViewController
 
 @end

@@ -1,45 +1,19 @@
 //
-//  MenuTableViewController.m
+//  SWRevealFrontUITableViewController.m
 //  Sound of Seoul Second Demo
 //
-//  Created by Jinho Chung on 2014. 11. 16..
+//  Created by rchung on 2014. 11. 18..
 //  Copyright (c) 2014년 rchung. All rights reserved.
 //
 
-#import "MenuTableViewController.h"
+#import "SWRevealFrontUITableViewController.h"
+#import "SWRevealViewController.h"
 
-@interface MenuTableViewController ()
+@interface SWRevealFrontUITableViewController ()
 
 @end
 
-@implementation MenuTableViewController
-
-- (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
-{
-    UINavigationController *navController = segue.destinationViewController;
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *viewController = nil;
-    
-    // configure the destination view controller:
-    if ( [sender isKindOfClass:[UITableViewCell class]] )
-    {
-        UILabel *label = (UILabel *)sender;
-        NSString *text = label.text;
-
-        if ([text isEqualToString:@"Map"]) {
-            viewController = [storyboard instantiateViewControllerWithIdentifier:@"mapViewControllerIdentifier"];
-            
-        } else if ([text isEqualToString:@"Favorite"]) {
-            viewController = [storyboard instantiateViewControllerWithIdentifier:@"favoriteViewControllerIdentifier"];
-            
-        } else if ([text isEqualToString:@"About"]) {
-            viewController = [storyboard instantiateViewControllerWithIdentifier:@"aboutViewControllerIdentifier"];
-            
-        }
-        [navController setViewControllers:[NSArray arrayWithObject:viewController] animated:NO];
-    }
-}
-
+@implementation SWRevealFrontUITableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,53 +30,60 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) swRevealViewControllerSetup {
+    SWRevealViewController *revealViewController = self.revealViewController;
+    
+    UIBarButtonItem *barButtonItem = self.navigationItem.leftBarButtonItem;
+    
+    if ( revealViewController )
+    {
+        [barButtonItem setTarget: self.revealViewController];
+        [barButtonItem setAction: @selector( revealToggle: )];
+        [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
+    }
+}
+
+- (void) setNavigationBarWithTitle:(NSString *)title andBackButtonTitle:(NSString *)backbuttonTitle {
+    
+    self.navigationItem.title = title;
+    
+    if ([self.navigationItem.leftBarButtonItems count] > 0) {
+        self.navigationItem.leftBarButtonItem.title = backbuttonTitle;
+    } else {
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:backbuttonTitle
+                                                                                 style:UIBarButtonItemStylePlain
+                                                                                target:self.revealViewController
+                                                                                action:@selector(revealToggle:)];
+    }
+}
+
+
+
 #pragma mark - Table view data source
 
+// 사용 안함. (이 클래스를 상속한 클래스에서 사용함)
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
+// 사용 안함. (이 클래스를 상속한 클래스에서 사용함)
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    UITableViewCell *cell = nil;
-    NSString *identifier = nil;
-    NSString *text = nil;
-    
-    switch (indexPath.row) {
-        case 0:
-            identifier = @"menuMapCell";
-            text = @"Map";
-            break;
-            
-        case 1:
-            identifier = @"menuFavoriteCell";
-            text = @"Favorite";
-            break;
-            
-        case 2:
-            identifier = @"menuAboutCell";
-            text = @"About";
-            break;
-            
-        default:
-            break;
-    }
-
-    cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    cell.textLabel.text = text;
+    // Configure the cell...
     
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
