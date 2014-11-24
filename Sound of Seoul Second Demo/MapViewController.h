@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 #import "SWRevealFrontUIViewController.h"
 
-@interface MapViewController : SWRevealFrontUIViewController
+@interface MapViewController : SWRevealFrontUIViewController <GMSMapViewDelegate>
 
 @end

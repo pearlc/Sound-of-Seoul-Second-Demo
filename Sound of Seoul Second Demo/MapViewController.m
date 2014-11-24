@@ -8,6 +8,7 @@
 
 #import "MapViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "PlaceInfoWindow.h"
 #import "SWRevealViewController.h"
 #import "Place.h"
 #import "SoundMetaData.h"
@@ -118,6 +119,7 @@ NSArray *locations;
                                                                  zoom:6];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView_.myLocationEnabled = YES;
+    mapView_.delegate = self;
     mapView_.settings.myLocationButton = YES;
     mapView_.settings.indoorPicker = YES;
     mapView_.settings.compassButton = YES;
@@ -159,5 +161,19 @@ NSArray *locations;
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - GMSMapViewDelegate
+- (UIView *) mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker
+{
+    PlaceInfoWindow *placeInfoWindow = [[[NSBundle mainBundle] loadNibNamed:@"PlaceInfoWindow"
+                                                                      owner:self
+                                                                    options:nil] objectAtIndex:0];
+    
+    placeInfoWindow.title.text = marker.title;
+    placeInfoWindow.address.text = marker.snippet;
+    // placeInfoWindow.moreButton;
+    
+    return placeInfoWindow;
+}
 
 @end

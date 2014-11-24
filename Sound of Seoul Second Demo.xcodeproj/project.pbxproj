@@ -34,6 +34,8 @@
 		9BAED72A1A1DD276000AA094 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAED7291A1DD276000AA094 /* AboutViewController.m */; };
 		9BCC2C8E1A21CEEA000B2AFF /* SoundMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC2C8D1A21CEEA000B2AFF /* SoundMetaData.m */; };
 		9BCC2C911A21D1C6000B2AFF /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC2C901A21D1C6000B2AFF /* Place.m */; };
+		9BD3700A1A22FF8E00AEEDD9 /* PlaceInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD370091A22FF8E00AEEDD9 /* PlaceInfoWindow.xib */; };
+		9BD3700D1A2300A300AEEDD9 /* PlaceInfoWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD3700C1A2300A300AEEDD9 /* PlaceInfoWindow.m */; };
 		F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD11A18729000D477A1 /* SWRevealViewController.m */; };
 		F7F90CD81A18742A00D477A1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CD71A18742A00D477A1 /* MapViewController.m */; };
 		F7F90CDB1A18743E00D477A1 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F90CDA1A18743E00D477A1 /* MenuTableViewController.m */; };
@@ -88,6 +90,9 @@
 		9BCC2C8D1A21CEEA000B2AFF /* SoundMetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundMetaData.m; sourceTree = "<group>"; };
 		9BCC2C8F1A21D1C6000B2AFF /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		9BCC2C901A21D1C6000B2AFF /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		9BD370091A22FF8E00AEEDD9 /* PlaceInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceInfoWindow.xib; sourceTree = "<group>"; };
+		9BD3700B1A2300A300AEEDD9 /* PlaceInfoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceInfoWindow.h; sourceTree = "<group>"; };
+		9BD3700C1A2300A300AEEDD9 /* PlaceInfoWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceInfoWindow.m; sourceTree = "<group>"; };
 		F7F90CD01A18729000D477A1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F7F90CD11A18729000D477A1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F7F90CD61A18742A00D477A1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -182,6 +187,9 @@
 				9BCC2C8D1A21CEEA000B2AFF /* SoundMetaData.m */,
 				9BCC2C8F1A21D1C6000B2AFF /* Place.h */,
 				9BCC2C901A21D1C6000B2AFF /* Place.m */,
+				9BD370091A22FF8E00AEEDD9 /* PlaceInfoWindow.xib */,
+				9BD3700B1A2300A300AEEDD9 /* PlaceInfoWindow.h */,
+				9BD3700C1A2300A300AEEDD9 /* PlaceInfoWindow.m */,
 			);
 			path = "Sound of Seoul Second Demo";
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 				9B2C237E1A17353900E36D98 /* Main.storyboard in Resources */,
 				9B2C23831A17353900E36D98 /* LaunchScreen.xib in Resources */,
 				9B2C23801A17353900E36D98 /* Images.xcassets in Resources */,
+				9BD3700A1A22FF8E00AEEDD9 /* PlaceInfoWindow.xib in Resources */,
 				9B2C239C1A17365000E36D98 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B57890F1A20834800E7137A /* FavoriteViewController.m in Sources */,
+				9BD3700D1A2300A300AEEDD9 /* PlaceInfoWindow.m in Sources */,
 				9B2C23751A17353900E36D98 /* AppDelegate.m in Sources */,
 				9B288F031A1BAC0300ACF352 /* SWRevealFrontUIViewController.m in Sources */,
 				9B2C23721A17353900E36D98 /* main.m in Sources */,
