@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B204C651A230C9A000422C3 /* MusicPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B204C641A230C9A000422C3 /* MusicPlayerViewController.m */; };
 		9B288F031A1BAC0300ACF352 /* SWRevealFrontUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B288F021A1BAC0300ACF352 /* SWRevealFrontUIViewController.m */; };
 		9B288F061A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B288F051A1BACBA00ACF352 /* SWRevealFrontUITableViewController.m */; };
 		9B2C23721A17353900E36D98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C23711A17353900E36D98 /* main.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B204C631A230C9A000422C3 /* MusicPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayerViewController.h; sourceTree = "<group>"; };
+		9B204C641A230C9A000422C3 /* MusicPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerViewController.m; sourceTree = "<group>"; };
 		9B288F011A1BAC0300ACF352 /* SWRevealFrontUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealFrontUIViewController.h; sourceTree = "<group>"; };
 		9B288F021A1BAC0300ACF352 /* SWRevealFrontUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealFrontUIViewController.m; sourceTree = "<group>"; };
 		9B288F041A1BACBA00ACF352 /* SWRevealFrontUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealFrontUITableViewController.h; sourceTree = "<group>"; };
@@ -190,6 +193,8 @@
 				9BD370091A22FF8E00AEEDD9 /* PlaceInfoWindow.xib */,
 				9BD3700B1A2300A300AEEDD9 /* PlaceInfoWindow.h */,
 				9BD3700C1A2300A300AEEDD9 /* PlaceInfoWindow.m */,
+				9B204C631A230C9A000422C3 /* MusicPlayerViewController.h */,
+				9B204C641A230C9A000422C3 /* MusicPlayerViewController.m */,
 			);
 			path = "Sound of Seoul Second Demo";
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				9B2C23721A17353900E36D98 /* main.m in Sources */,
 				F7F90CD21A18729000D477A1 /* SWRevealViewController.m in Sources */,
 				9B2C23781A17353900E36D98 /* Sound_of_Seoul_Second_Demo.xcdatamodeld in Sources */,
+				9B204C651A230C9A000422C3 /* MusicPlayerViewController.m in Sources */,
 				9BAED72A1A1DD276000AA094 /* AboutViewController.m in Sources */,
 				9BCC2C8E1A21CEEA000B2AFF /* SoundMetaData.m in Sources */,
 				F7F90CDB1A18743E00D477A1 /* MenuTableViewController.m in Sources */,

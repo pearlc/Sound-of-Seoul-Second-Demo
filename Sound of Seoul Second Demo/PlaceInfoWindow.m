@@ -17,5 +17,8 @@
     // Drawing code
 }
 */
+- (IBAction)moreButtonPressed:(id)sender {
+    NSLog(@"I touched");
+}
 
 @end

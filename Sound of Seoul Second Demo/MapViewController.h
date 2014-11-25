@@ -12,4 +12,5 @@
 
 @interface MapViewController : SWRevealFrontUIViewController <GMSMapViewDelegate>
 
+- (IBAction) showMusicPlayerView:(id)sender;
 @end

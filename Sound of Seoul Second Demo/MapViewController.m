@@ -12,6 +12,7 @@
 #import "SWRevealViewController.h"
 #import "Place.h"
 #import "SoundMetaData.h"
+#import "MusicPlayerViewController.h"
 
 /**
  홍대 : 37.550740, 126.925495
@@ -152,15 +153,18 @@ NSArray *locations;
 }
 
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    MusicPlayerViewController *musicPlayerViewController = (MusicPlayerViewController *)segue.destinationViewController;
+    
+    musicPlayerViewController.navigationItem.title = @"Sound Title";
 }
-*/
+
 
 #pragma mark - GMSMapViewDelegate
 - (UIView *) mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker
@@ -171,9 +175,13 @@ NSArray *locations;
     
     placeInfoWindow.title.text = marker.title;
     placeInfoWindow.address.text = marker.snippet;
-    // placeInfoWindow.moreButton;
     
     return placeInfoWindow;
+}
+
+- (void) mapView:(GMSMapView *)mapView didTapInfoWindowOfMarker:(GMSMarker *)marker
+{
+    [self performSegueWithIdentifier:@"fromMapToPlayer" sender:self];
 }
 
 @end

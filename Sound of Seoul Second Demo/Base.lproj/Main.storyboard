@@ -124,10 +124,39 @@
                     <navigationItem key="navigationItem" title="Map" id="r0q-ro-LQT">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="L32-hQ-jG9"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="He9-Ru-afQ" kind="custom" identifier="fromMapToPlayer" id="eBm-36-L7h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jg2-WN-AnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745" y="-351"/>
+        </scene>
+        <!--Music Player View Controller-->
+        <scene sceneID="Qov-37-15M">
+            <objects>
+                <viewController id="He9-Ru-afQ" customClass="MusicPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iqF-rP-hh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xko-y8-UK9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fqi-T9-HNx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MusicPlayerViewController" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1A-eP-CeM">
+                                <rect key="frame" x="16" y="165" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01n-Ow-Sxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2517" y="-351"/>
         </scene>
         <!--Favorite View Controller-->
         <scene sceneID="S3u-eI-dAT">
@@ -143,6 +172,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ppm-OO-p2M" id="JG4-Dw-M8s">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="He9-Ru-afQ" kind="custom" identifier="fromFavoriteToPlayer" id="ZOi-5B-esO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -188,6 +220,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="ZOi-5B-esO"/>
         <segue reference="tlY-HK-k9h"/>
     </inferredMetricsTieBreakers>
 </document>
